@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reverse Triangle Pattern</title>
+</head>
+<body>
+
+    <script>
+        let pattern = "";
+        let rows = 5;
+
+        for (let i = 1; i <= rows; i++) {
+            // Your logic: starts at 5 and goes down to i
+            for (let j = rows; j >= i; j--) {
+                pattern += "*";
+            }
+            pattern += "\n";
+        }
+
+        // Writing directly to the document without searching for an ID
+        document.write("<pre>" + pattern + "</pre>");
+    </script>
+
+</body>
+</html>

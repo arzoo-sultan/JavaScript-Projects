@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Triangle Pattern</title>
+</head>
+<body>
+
+    <script>
+        let pattern = "";
+
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= i; j++) {
+                pattern += "*";         
+            }
+            pattern += "\n";
+        }
+
+        // document.write sends the string directly to the HTML body
+        document.write("<pre>" + pattern + "</pre>");
+    </script>
+
+</body>
+</html>

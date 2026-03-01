@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Right-Aligned Triangle</title>
+</head>
+<body>
+
+    <script>
+        let result = ""; // One variable to hold the entire final string
+        let rows = 5;
+
+        for (let i = 1; i <= rows; i++) {
+            // 1. Add spaces first
+            for (let j = rows; j > i; j--) {
+                result += " "; 
+            }
+            // 2. Add stars next
+            for (let k = 1; k <= i; k++) {
+                result += "*";
+            }
+            // 3. Add new line
+            result += "\n";
+        }
+
+        // Output directly to the screen
+        document.write("<pre>" + result + "</pre>");
+    </script>
+
+</body>
+</html>

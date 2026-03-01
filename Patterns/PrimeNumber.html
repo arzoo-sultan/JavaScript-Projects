@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prime Numbers</title>
+</head>
+<body>
+
+    <script>
+        let limit = 50;
+        let result = "Prime numbers between 1 and " + limit + ":<br>";
+
+        for (let i = 2; i <= limit; i++) {
+            let isPrime = true;
+
+            // Check divisibility from 2 to i-1
+            for (let j = 2; j < i; j++) {
+                if (i % j === 0) {
+                    isPrime = false;
+                }
+            }
+
+            if (isPrime) {
+                result += i + "<br>";
+            }
+
+        }
+
+        document.write(result);
+    </script>
+
+</body>
+</html>

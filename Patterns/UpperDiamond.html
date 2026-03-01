@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        let rows = 5;
+        let result = "";
+
+        for (let i = 1; i <= rows; i++) {
+            // 1. Add spaces (Rows - CurrentRow)
+            for (let s = 1; s <= (rows - i); s++) {
+                result += " ";
+            }
+            // 2. Add stars (2 * CurrentRow - 1)
+            for (let star = 1; star <= (2 * i - 1); star++) {
+                result += "*";
+            }
+            // 3. New line
+            result += "\n";
+        }
+
+        document.write("<pre>" + result + "</pre>");
+    </script>
+</body>
+</html>
