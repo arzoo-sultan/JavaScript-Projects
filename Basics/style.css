@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    min-height: 50px;
+    padding: 10px;
+}
+
+p{
+    margin: 5px;
+    border: 1px solid black;
+}
+button{
+    height: 50px;
+    width: 80px;
+    color: #1c5b85;
+}
+input{
+    height: 50px;
+    width: 300px;
+
+}
+.completed{
+    text-decoration: line-through;
+     color: gray;
+}
